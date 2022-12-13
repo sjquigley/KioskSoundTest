@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+<!--Refreshes index.html after 300 seconds-->
+  <meta http-equiv="refresh" content="300;url=index.html">
+
+    <script> function delay (URL) {
+    setTimeout( function() { window.location = URL }, 1000 );
+}
+</script>
+
+</head>
+
+<audio id="player" src="click_sound.mp3"></audio>
+<audio autoplay id="music" src="DoomGate.mp3"></audio>
+
+<body>
+  <div>
+
+    <ul>
+    <li style="float:left"><p>Doom: The First Modern FPS</li>
+        <!--<li><a onclick="document.getElementById('music').play()">Play Music!</a></li>-->
+  </ul>
+
+    <br>
+
+      <a href="javascript:delay('fps.html')" onclick="document.getElementById('player').play()">What is an FPS?</a>
+      <a href="javascript:delay('pioneer1.html')" onclick="document.getElementById('player').play()">The First Modern FPS</a>
+      <a href="javascript:delay('doomdnd.html')" onclick="document.getElementById('player').play()">Doom and D&D</a>
+      <a href="javascript:delay('rundoom.html')" onclick="document.getElementById('player').play()">Can It Run Doom?</a>
+      <a href="javascript:delay('credits.html')" onclick="document.getElementById('player').play()">Thanks</a>
+      <p4>Made by Jacob Kleinhenz</p4>
+<!--
+    <div class="flex-container">
+      <div>
+        <img src="doom1.jpg" class="img-responsive" style="width:100%"alt="Image" >
+      </div>
+      <div>
+        <p style="font-size:12pt;">A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+      </div>
+-->
+    </div>
+
+</body>
+</html>
