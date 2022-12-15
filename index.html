@@ -13,7 +13,6 @@
     setTimeout( function() { window.location = URL }, 1000 );
 }
 </script>
-
 <script>
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (!isChrome){
@@ -25,15 +24,14 @@ var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator
 </script>
 
 
-
 </head>
 
 
 <iframe src="sound.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 </iframe>
 
-<audio autoplay loop  id="playAudio">
-    <source src="sound.mp3">
+<audio id="player" autoplay loop>
+    <source src="sound.mp3" type="audio/mp3">
 </audio>
 <body>
   <div>
